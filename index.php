@@ -18,6 +18,15 @@
 </head>
 
 <body>
+<input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
+
+<button class="btn btn-success">
+
+    <i class="fa-solid fa-house"></i>
+
+</button>
+
+<buttonclass="btn btn-success">"FontAwesome"</button>
 
 </body>
 
