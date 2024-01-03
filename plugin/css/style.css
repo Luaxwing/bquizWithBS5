@@ -69,13 +69,30 @@ body{
 }
 
 .main{
-    height: 2500px;
-    background-color: rgb(163, 163, 163);
+    position: relative;
+    height: 1500px;
+    background-color: rgb(255, 223, 223);
 }
 /* .banner-hr{
     border: 40px solid rgb(226, 23, 23);
     opacity: 1;
 } */
+
+.ani-img{
+    text-align: center;
+}
+.news{
+    position: relative;
+    left: 30px;
+    background-color: rgba(255, 236, 213, 0.963);
+    border: 1px solid rgba(169, 169, 239,0.5);
+}
+.text-news{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    line-height: 50px;
+}
 
 
 
