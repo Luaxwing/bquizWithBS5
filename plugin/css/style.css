@@ -1,0 +1,82 @@
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+
+.nav-link{
+    color: azure;
+}
+/* .main{
+    height: 5000px;
+} */
+
+.bg-custom{
+    background-color: rgb(110, 172, 227);
+}
+
+.footer-custom{
+    /* position:fixed; */
+    /* height: 300px; */
+    /* position: absolute; */
+    /* border: 1px solid blue; */
+    background-color: rgba(255,200,200,0.5);  
+    /* width: 300px; */
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner{
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /* height: 100px; */
+    width: 100%;
+    /* text-align: center; */
+}
+
+.mask{
+    /* background-color: black; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.mask:hover{
+    background-color: white;
+    opacity: 0.5;
+}
+
+.banner-col{
+    flex: 0 0 auto;
+    width: 80%;
+    background-color: rgb(129, 129, 129);
+    /* text-align: center; */
+}
+
+.banner-sub{
+    background-color: rgb(81, 81, 81);
+}
+
+.main{
+    height: 2500px;
+    background-color: rgb(163, 163, 163);
+}
+/* .banner-hr{
+    border: 40px solid rgb(226, 23, 23);
+    opacity: 1;
+} */
+
+
+
+
