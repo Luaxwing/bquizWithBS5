@@ -4,8 +4,8 @@ session_start();
 class DB
 {
     // 定義class函數 "資料庫" "PDO" "TABLE"
-    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1120425";
-    // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=bquiz";
+    // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1120425";
+    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=db91";
     protected $pdo;
     protected $table;
     //$sql 放置MariaDB 的查找語句
@@ -15,8 +15,8 @@ class DB
     public function __construct($table)
     {
         $this->table = $table;
-        $this->pdo = new PDO($this->dsn, 's1120425', 's1120425');
-        // $this->pdo = new PDO($this->dsn, 'root', '');
+        // $this->pdo = new PDO($this->dsn, 's1120425', 's1120425');
+        $this->pdo = new PDO($this->dsn, 'root', '');
     }
     // 
 // 測試檢視資料表用
@@ -216,7 +216,9 @@ function dd($array)
 
 // 記得:這裡的table是輸入字串，不是欄位
 // 引入字串，字串才去帶`col`
-$Test=new DB('test');
+// $Test=new DB('test');
+
+$News=new DB('news');
 
 
 

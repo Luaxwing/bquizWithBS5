@@ -4,10 +4,11 @@
 include_once "./api/db.php";
 
 
+$news=$News->all();
+dd($news);
+// $test=$Test->all();
 
-$test=$Test->all();
-
-dd($test);
+// dd($test);
 
 // echo $test['text'];
 ?>
