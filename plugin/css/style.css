@@ -1,32 +1,83 @@
-
-body{
+body {
+    position: relative;
     overflow-x: hidden;
+    background-color: rgb(96, 96, 96);
+    /* min-height: 100%; */
 }
 
-.navbar{
+html,
+body {
+    height: 100%;
+    /*外層高度100%*/
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 70%;
+    /*外層高度100%*/
+    margin-bottom: 50px;
+    /*隨footer高度需做調整*/
+}
+
+.navbar {
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 2;
+    height: 10%;
+}
+
+.navText {
+    color: white;
+}
+
+.bg-custom {
+    background-color: rgb(59, 59, 59);
+}
+
+.topBtn {
+    position: sticky;
+    width: 100%;
+    top: 80%;
+    /* background-color: blue; */
+    z-index: 99;
 }
 
 
-.nav-link{
+.topBtn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    /* background-color: white; */
+    background-color: rgb(61, 61, 61);
+    /* border: 1px solid rgb(163, 186, 254); */
+    /* box-shadow: 5px 5px 10px rgba(127, 127, 127, 0.2); */
+    cursor: pointer;
+    /* color: rgb(155, 192, 255); */
+    color: rgb(255, 255, 255);
+}
+
+
+.nav-link {
     color: azure;
 }
+
 /* .main{
     height: 5000px;
 } */
 
-.bg-custom{
-    background-color: rgb(110, 172, 227);
-}
 
-.footer-custom{
+.footer-custom {
     /* position:fixed; */
     /* height: 300px; */
     /* position: absolute; */
     /* border: 1px solid blue; */
-    background-color: rgba(255,200,200,0.5);  
+    background-color: rgba(255, 200, 200, 0.5);
     /* width: 300px; */
     height: 100px;
     bottom: 0;
@@ -34,7 +85,7 @@ body{
     right: 0;
 }
 
-.banner{
+.banner {
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -44,7 +95,7 @@ body{
     /* text-align: center; */
 }
 
-.mask{
+.mask {
     /* background-color: black; */
     position: absolute;
     height: 100%;
@@ -52,48 +103,92 @@ body{
     top: 0;
     left: 0;
 }
-.mask:hover{
-    background-color: white;
+
+.mask:hover {
+    background-color: rgb(84, 84, 84);
     opacity: 0.5;
 }
 
-.banner-col{
+.banner-col {
     flex: 0 0 auto;
     width: 80%;
     background-color: rgb(129, 129, 129);
     /* text-align: center; */
 }
 
-.banner-sub{
+.banner-sub {
     background-color: rgb(81, 81, 81);
 }
 
-.main{
+.main {
+    padding: 50px;
     position: relative;
-    height: 1500px;
-    background-color: rgb(255, 223, 223);
+    /* height: 1500px; */
+    /* background-color: rgb(255, 223, 223); */
+    background-color: rgba(255, 255, 255, 0.5);
 }
+
 /* .banner-hr{
     border: 40px solid rgb(226, 23, 23);
     opacity: 1;
 } */
 
-.ani-img{
+.ani-img {
     text-align: center;
 }
-.news{
-    position: relative;
-    left: 30px;
-    background-color: rgba(255, 236, 213, 0.963);
-    border: 1px solid rgba(169, 169, 239,0.5);
+
+.newss {
+    margin-top: 50px;
 }
-.text-news{
-    position: relative;
-    top: 30px;
-    left: 30px;
+
+.news {
+
+    background-color: rgba(255, 236, 213, 0.963);
+    border: 1px solid rgba(169, 169, 239, 0.5);
+}
+
+
+.contant {
+
+    margin: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255, 236, 213, 0.963);
+    border: 1px solid rgba(169, 169, 239, 0.5);
+}
+
+.text-news {
+    margin: auto;
     line-height: 50px;
 }
 
+.myCarousel {
+    padding: 10px;
+    background-color: rgb(90, 90, 90);
+}
 
+.myCarouselBtn {
+    background-color: black;
+}
 
+/* login */
 
+.loginP {
+    box-sizing: border-box;
+    margin-top: 50px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(137, 137, 137);
+}
+
+.loginF {
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
