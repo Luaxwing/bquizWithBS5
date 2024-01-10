@@ -214,10 +214,16 @@ function dd($array)
     echo "</pre>";
 }
 
+function to($str){
+    header("location:$str");
+}
+
 // 記得:這裡的table是輸入字串，不是欄位
 // 引入字串，字串才去帶`col`
 // $Test=new DB('test');
 
+
+$Admin=new DB('admin');
 $News=new DB('news');
 
 

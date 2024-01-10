@@ -1,3 +1,9 @@
+<?php
+include_once "./api/db.php";
+?>
+
+
+
 <!doctype html>
 <html lang="en">
 
@@ -16,21 +22,27 @@
     <script src="./plugin/js/jquery-1.9.1.min.js"></script>
     <script src="./plugin/js/js.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
+
+
     <?php
-    $do = $_GET['do'] ?? 'main';
-    $file = "./front/{$do}.php";
-    if (file_exists($file)) {
-        $page = $file;
-    } else {
-        $page = "./front/main.php";
-    }
+    // $do = $_GET['do'] ?? 'main';
+    // $file = "./front/{$do}.php";
+    // if (file_exists($file)) {
+    //     $page = $file;
+    // } else {
+    //     $page = "./back/main.php";
+    // }
+    
 
-
-    $link = ($page == "./front/main.php") ? "" : "?do=main";
-
+    // $link = ($page == "./front/main.php") ? "" : "?do=main";
+    
 
     ?>
     <!-- navbar in -->
@@ -44,13 +56,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link " href="<?= $link ?>#">首頁</a>
+                    <a class="nav-link " href="<?= $link ?>#" id="settingBtn"><i class="fa-solid fa-gear " id="gear"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?do=login">登入</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= $link ?>#news">最新消息</a>
+                    <a class="nav-link" href="<?= $link ?>#news">最新消息</i></a>
                 </li>
                 <!-- <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -62,11 +71,12 @@
     <!-- navbar end -->
 
     <div class="wrapper">
-
+        hello
+        <?= $_SESSION['login']; ?>
         <?php
 
-        include $page;
-
+        // include $page;
+        
         ?>
     </div>
 
@@ -81,7 +91,18 @@
 
 
 
+<script>
+    $("#settingBtn").mouseover(function(){
+        $("#gear").attr('class','fa-solid fa-gear fa-spin')
+        // console.log('over');
+    });
+    $("#settingBtn").mouseout(function(){
+        $("#gear").attr('class','fa-solid fa-gear')
+        // console.log('out');
+    });
 
+
+</script>
 
 </body>
 
