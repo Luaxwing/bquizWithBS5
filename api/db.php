@@ -218,13 +218,80 @@ function to($str){
     header("location:$str");
 }
 
+function pageInit($total, $div)
+{
+    $pages = ceil($total / $div);
+    $now = $_GET['p'] ?? 1;
+    $start = ($now - 1) * $div;
+    $array = [$pages, $now, $start];
+    return $array;
+}
+;
+
+// 分頁標籤
+function pagetabs($now, $pages, $table = "")
+{
+    $str = ($table != "") ? "do=$table&" : "";
+    $prev = $now - 1;
+    if ($prev >= 1) {
+
+        echo "<a href='?do=$table&p=$prev'> &lt; </a>";
+    }
+
+    for ($i = 1; $i <= $pages; $i++) {
+        $fontsize = ($now == $i) ? '24px' : '16px';
+        echo " <a href=?{$str}p=$i";
+        echo " style=font-size:$fontsize;";
+        // if($i==$now){
+        //     echo " style=font-size:25px;";
+        // }
+        echo ">";
+        echo $i;
+        echo "</a>";
+    }
+
+    $next = $now + 1;
+    if ($next <= $pages) {
+        echo "<a href='?{$str}p=$next'> &gt; </a>";
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 記得:這裡的table是輸入字串，不是欄位
 // 引入字串，字串才去帶`col`
 // $Test=new DB('test');
 
 
+
+
+
+
+
+
+
 $Admin=new DB('admin');
 $News=new DB('news');
+$Img=new DB("image");
+$Mvim=new DB("mvim");
+$Title=new DB("title");
 
 
 
