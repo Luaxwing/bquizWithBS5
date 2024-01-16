@@ -1,3 +1,10 @@
+<?php
+if(isset($_SESSION['login'])){
+    to("back.php");
+}
+?>
+
+
 <div class="container loginP">
     <div class="loginF">
         <fieldset>

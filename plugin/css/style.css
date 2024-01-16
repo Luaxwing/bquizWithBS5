@@ -12,12 +12,7 @@ body {
     margin: 0;
 }
 
-.wrapper {
-    min-height: 70%;
-    /*外層高度100%*/
-    margin-bottom: 50px;
-    /*隨footer高度需做調整*/
-}
+
 
 .navbar {
     width: 100%;
@@ -141,10 +136,15 @@ body {
     margin-top: 50px;
 }
 
-.news {
+.news1 {
 
     background-color: rgba(255, 236, 213, 0.963);
     border: 1px solid rgba(169, 169, 239, 0.5);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -196,3 +196,31 @@ body {
 .errL{
     color: red;
 }
+
+
+
+
+.border div{
+    border: 2px solid black;
+}
+
+
+
+/* back */
+.wrapper {
+    min-height: 70%;
+    /*外層高度100%*/
+    margin-bottom: 50px;
+    /*隨footer高度需做調整*/
+
+}
+.backmain{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: gray;
+}
+
+
