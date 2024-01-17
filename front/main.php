@@ -28,13 +28,13 @@
 <!-- main -->
 <div class="container">
     <div class="main">
-        
 
 
-<?php include_once "./carousel.php" ;?>
+
+        <?php include_once "./carousel.php"; ?>
 
 
-    
+
 
 
 
@@ -69,9 +69,48 @@
                 </div>
                 <!--  -->
             </div>
+
+
+            <!-- ### -->
+
             <div class="col ani-img">
-                <img src="./img/01C03.gif" alt="" srcset="" width="500px;" ;>
+                <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- carousel-img -->
+                        <div class="row">
+                            <div class="col">
+                                <div class="cal-mask"></div>
+                            </div>
+                            <div class="col-8">
+
+                                <?php
+                                $mvims = $Mvim->all(['sh' => 1]);
+                                foreach ($mvims as $idx => $mvim) {
+
+
+                                    ?>
+
+                                    <div class="carousel-item <?= ($idx == 0) ? "active" : "" ?>" data-bs-interval="3000">
+                                        <img src="./img/<?= $mvim['img'] ?>" alt="" srcset="" width="500px;" ;>
+                                    </div>
+                                    <?php
+                                }
+                                ?>
+                            </div>
+                            <div class="col">
+                                <div class="cal-mask"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- carousel-img ED -->
+                </div>
+
             </div>
+            <!--  -->
+            <!-- <div class="col ani-img">
+                <img src="./img/01C03.gif" alt="" srcset="" width="500px;" ;>
+            </div> -->
         </div>
 
         <!-- ani-img here -->
