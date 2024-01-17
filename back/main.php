@@ -23,6 +23,9 @@
                     <td></td>
                 </tr>
                 <?php
+                if(isset($_GET['do'])){
+                    $do="title";
+                }
             
                 $rows=$Title->all();
                 foreach($rows as $row ){

@@ -1,4 +1,4 @@
-<?php  
+<?php
 include_once "./api/db.php";
 ?>
 
@@ -23,6 +23,26 @@ include_once "./api/db.php";
 </head>
 
 <body>
+
+
+
+    <!-- modal -->
+    <!-- 如果能用就不要改 -->
+
+    <?php
+include_once "modal.php";
+?>
+
+    <!-- modal -->
+
+
+
+
+
+
+
+
+
     <?php
     $do = $_GET['do'] ?? 'main';
     $file = "./front/{$do}.php";

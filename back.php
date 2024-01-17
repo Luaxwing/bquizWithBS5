@@ -37,6 +37,17 @@ if (!isset($_SESSION['login'])) {
 <body>
 
 
+
+    <!-- modal -->
+    <!-- 如果能用就不要改 -->
+
+    <?php
+include_once "./modal.php";
+?>
+
+    <!-- modal -->
+
+
     <?php
     // $do = $_GET['do'] ?? 'main';
     // $file = "./front/{$do}.php";
@@ -66,7 +77,8 @@ if (!isset($_SESSION['login'])) {
                             id="gear"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $link ?>#news">最新消息</i></a>
+                    <a class="nav-link" href="index.php">回首頁</i></a>
+                    <!-- <a class="nav-link" href="<?= $link ?>#news">最新消息</i></a> -->
                 </li>
                 <!-- <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
