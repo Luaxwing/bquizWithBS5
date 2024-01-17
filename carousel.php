@@ -8,7 +8,10 @@
                     <div class="cal-mask"></div>
                 </div>
                 <div class="col-8">
-                    <div class="carousel-item active" data-bs-interval="3000">
+
+                    <!-- SAMPLE -->
+
+                    <!-- <div class="carousel-item active" data-bs-interval="3000">
                         <img src="./img/01D01.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
@@ -16,7 +19,23 @@
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
                         <img src="./img/01D03.jpg" class="d-block w-100" alt="...">
-                    </div>
+                    </div> -->
+
+
+                    <!--  -->
+
+                    <?php
+                    $imgs = $Img->all(['sh' => 1]);
+                    foreach ($imgs as $idx => $img) {
+
+
+                        ?>
+                        <div class="carousel-item <?=($idx==0)?"active":""?>" data-bs-interval="3000">
+                            <img src="./img/<?=$img['img']?>" class="d-block w-100" alt="...">
+                        </div>
+                        <?php
+                    }
+                    ?>
                 </div>
                 <div class="col">
                     <div class="cal-mask"></div>

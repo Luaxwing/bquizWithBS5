@@ -23,7 +23,7 @@
                     <td></td>
                 </tr>
                 <?php
-                if(isset($_GET['do'])){
+                if(!isset($_GET['do'])){
                     $do="title";
                 }
             
