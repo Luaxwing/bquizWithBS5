@@ -164,96 +164,9 @@ body {
     line-height: 50px;
 }
 
-.imgbox{
 
 
 
 
 
-/* login */
-
-.loginP {
-    box-sizing: border-box;
-    margin-top: 50px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(137, 137, 137);
-}
-
-.loginF {
-    width: 50%;
-    height: 80%;
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.errL{
-    color: red;
-}
-
-
-
-
-.border div{
-    border: 2px solid black;
-}
-
-
-
-/* back */
-.wrapper {
-    min-height: 70%;
-    /*外層高度100%*/
-    margin-bottom: 50px;
-    /*隨footer高度需做調整*/
-
-}
-
-.active{
-width: calc(100% - 300px);
-margin-left: 300px;
-}
-.backmain{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 300px;
-    height: 100%;
-    background-color: rgba(128, 128, 128,0.5);
-    /* filter: blur(4px); */
-    z-index: 1;
-}
-
-a:has(>div.sideBar-item){
-    text-decoration: none;
-    text-align: center;
-    
-}
-
-.sideBar-item{
-    color: black;
-    margin: auto;
-    margin-top: 10px;
-    width: 95%;
-    background-color: rgb(155, 155, 155);
-}
-
-.sideBar-item:hover{
-    background-color: rgb(185, 185, 185);
-}
-
-.box{
-    box-sizing: border-box;
-    border: 10px solid rgb(169, 169, 169);
-    position: relative;
-    top: 35px;
-    background-color: white;
-    padding-top: 50px;
-    width: 120%;
-    height: 650px;
-}
 
