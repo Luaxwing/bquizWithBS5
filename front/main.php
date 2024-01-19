@@ -3,8 +3,9 @@
 
     <div class="col banner-sub"></div>
     <div class="col banner-col">
-        <a href="./testdb.php" class="banner">
-            <img src="./img/01B04.jpg" alt="" width="100%">
+        <a href="./index.php" class="banner">
+            <?php $title=$Title->find(['sh'=>1]);?>
+            <img src="./img/<?=$title['img']?>" alt="" width="100%">
             <div class="mask"></div>
         </a>
     </div>
@@ -126,8 +127,9 @@
                     <?php
                     $news = $News->all(["sh" => 1]);
 
+
                     foreach ($news as $new) {
-                        echo "<li>" . "<a href='#'>" . mb_substr($new['text'], 0, 50) . "...</a>" . "</li>";
+                        echo "<li>" . "<a href='?'>" . mb_substr($new['text'], 0, 50) . "...</a>" . "</li>";
                     }
 
                     ?>
